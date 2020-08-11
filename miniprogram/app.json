@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c61b4",
+    "navigationBarTitleText": "MQTT模拟器",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_component.png",
+        "selectedIconPath": "images/icon_component_HL.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon_API.png",
+        "selectedIconPath": "images/icon_API_HL.png",
+        "text": "接口"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-toast": "lin-ui/toast/index",
+    "l-input": "lin-ui/input/index",
+    "l-list": "lin-ui/list/index",
+    "l-grid": "lin-ui/grid/index",
+    "l-grid-item": "lin-ui/grid-item/index",
+    "l-button": "lin-ui/button/index",
+    "l-message": "lin-ui/message/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

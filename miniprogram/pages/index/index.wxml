@@ -1,0 +1,47 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<view class="container" >
+
+<div class="box link">
+  <l-input label="地址" label-layout="left"  placeholder="示例：127.0.0.1:1883" value="127.0.0.1:1883" />
+</div>
+
+<div class="box infomation">
+  <div class="box-header">设备信息</div>
+  <div class="box-container">
+    <l-input label="productKey"  placeholder="填写productKey" value="" />
+    <l-input label="deviceName"  placeholder="填写deviceName" value="" />
+    <l-input label="deviceSecret"  placeholder="填写deviceSecret" value="" />
+  </div>
+</div>
+
+<div class="box module">
+  <div class="box-header">功能区</div>
+  <div class="box-container pl10" >
+    <l-list class="" title="设备连接" icon="setting" tag-content="设备上线" is-link="{{false}}" />
+    <l-list class="" title="物模型" icon="setting" is-link="{{false}}">
+      <view slot="left-section" class="button-li">
+        <view class="button-cell button-cell-mini">属性上报</view>
+        <view class="button-cell button-cell-mini ml20">事件上报</view>
+        <view class="button-cell button-cell-mini ml20">订阅服务</view>
+      </view>
+    </l-list>
+    <l-list class="" title="自定义Topic" icon="setting" is-link="{{false}}">
+      <view slot="left-section" class="button-li">
+        <view class="button-cell button-cell-mini">上报数据(update)</view>
+        <view class="button-cell button-cell-mini ml20">订阅主题(get)</view>
+      </view>
+    </l-list>
+  </div>
+</div>
+
+<div class="box logger">
+  <div class="box-header">设备日志</div>
+  <div class="box-container pl10">
+    <p> dddd</p>
+    <p> ddxxxdd</p>
+  </div>
+</div>
+
+</view>
+
